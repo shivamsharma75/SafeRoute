@@ -1,0 +1,86 @@
+[
+  {
+    "id": "police_sec17",
+    "name": "Police Station Sector 17 (Central)",
+    "lat": 30.7410,
+    "lng": 76.7810,
+    "type": "police"
+  },
+  {
+    "id": "police_sec34",
+    "name": "Police Station Sector 34",
+    "lat": 30.7225,
+    "lng": 76.7680,
+    "type": "police"
+  },
+  {
+    "id": "police_sec11",
+    "name": "Police Station Sector 11",
+    "lat": 30.7610,
+    "lng": 76.7850,
+    "type": "police"
+  },
+  {
+    "id": "police_sec26",
+    "name": "Police Station Sector 26",
+    "lat": 30.7300,
+    "lng": 76.8010,
+    "type": "police"
+  },
+  {
+    "id": "police_sec19",
+    "name": "Police Station Sector 19",
+    "lat": 30.7360,
+    "lng": 76.7940,
+    "type": "police"
+  },
+  {
+    "id": "police_sec36",
+    "name": "Police Station Sector 36",
+    "lat": 30.7180,
+    "lng": 76.7450,
+    "type": "police"
+  },
+  {
+    "id": "hospital_pgi",
+    "name": "PGI Hospital (PGIMER) Sector 12",
+    "lat": 30.7670,
+    "lng": 76.7750,
+    "type": "hospital"
+  },
+  {
+    "id": "hospital_gmsh16",
+    "name": "Government Multi-Specialty Hospital (GMSH-16)",
+    "lat": 30.7483,
+    "lng": 76.7818,
+    "type": "hospital"
+  },
+  {
+    "id": "hospital_gmch32",
+    "name": "Government Medical College & Hospital (GMCH-32)",
+    "lat": 30.7075,
+    "lng": 76.7695,
+    "type": "hospital"
+  },
+  {
+    "id": "pharmacy_sec22",
+    "name": "24x7 Apollo Pharmacy Sector 22",
+    "lat": 30.7310,
+    "lng": 76.7720,
+    "type": "pharmacy"
+  },
+  {
+    "id": "pharmacy_sec15",
+    "name": "24x7 Chemist Sector 15 Market",
+    "lat": 30.7595,
+    "lng": 76.7665,
+    "type": "pharmacy"
+  },
+  {
+    "id": "pharmacy_sec35",
+    "name": "Medicity Pharmacy Sector 35",
+    "lat": 30.7240,
+    "lng": 76.7600,
+    "type": "pharmacy"
+  }
+]
