@@ -12,10 +12,13 @@ connectDB();
 const app = express();
 const server = http.createServer(app);
 
+const rawClientUrl = process.env.CLIENT_URL || 'http://localhost:5173';
+const CLIENT_URL = rawClientUrl.endsWith('/') ? rawClientUrl.slice(0, -1) : rawClientUrl;
+
 // ─── Socket.io (Live Location) ────────────────────────────────────────────────
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: CLIENT_URL,
     methods: ['GET', 'POST'],
   },
 });
@@ -50,7 +53,7 @@ app.set('userPositions', userPositions);
 
 // ─── Middleware ───────────────────────────────────────────────────────────────
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: CLIENT_URL,
   credentials: true,
 }));
 app.use(express.json({ limit: '10kb' }));
@@ -100,7 +103,7 @@ server.listen(PORT, () => {
   console.log(`\n🛡️  SafeRoute API running on port ${PORT}`);
   console.log(`📡 Socket.io live tracking enabled`);
   console.log(`🗺️  OSRM: ${process.env.OSRM_BASE_URL || 'http://router.project-osrm.org'}`);
-  console.log(`🌍 Client: ${process.env.CLIENT_URL || 'http://localhost:5173'}\n`);
+  console.log(`🌍 Client: ${CLIENT_URL}\n`);
 });
 
 module.exports = { app, server };
